@@ -7,13 +7,6 @@
 
 import Foundation
 
-public class ManagerOfApp {
-    private init() {}
-    static let shared = ManagerOfApp()
-    
-    var mainUser : MyContact?
-    
-}
 
 class User{
     

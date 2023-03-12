@@ -67,6 +67,9 @@ class SessionDelegator: NSObject, WCSessionDelegate , ObservableObject{
         } else if(message["token"] != nil){
             self.token = message["token"] as? String ?? ""
             print("Token : " + self.token!)
+        } else if(message["user_number"] != nil){
+            UserDefaults.standard.set(message["user_number"], forKey: "user_number")
+            print("User number: \(message["user_number"])")
         }
     }
     
@@ -105,6 +108,11 @@ class SessionDelegator: NSObject, WCSessionDelegate , ObservableObject{
         NSKeyedArchiver.setClassName("MyContact", for: MyContact.self)
         let data = try! NSKeyedArchiver.archivedData(withRootObject: contObjects, requiringSecureCoding: true)
         sendWatchMessage(data)
+        
+        if(session.isReachable == true){
+            let number = ["user_number" : UserDefaults.standard.string(forKey: "user_number")]
+            session.sendMessage(number, replyHandler: nil)
+        }
     }
     
     

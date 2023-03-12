@@ -29,8 +29,9 @@ class ChatController{
     
     public func saveUser(user : User){
             
-            ManagerOfApp.shared.mainUser = MyContact()
-            ManagerOfApp.shared.mainUser?.addNumber(number: user.getNumber())
+          
+        
+        UserDefaults.standard.set(user.number, forKey: "user_number")
             
             let database = CKContainer(identifier: "iCloud.ICLOUD.SNAPP").publicCloudDatabase
             let record = CKRecord(recordType: user_record_type)
@@ -52,6 +53,8 @@ class ChatController{
       
         }
     
+    
+    //NOT USED FOR NOW
     public func saveMessage(){
         
         let database = CKContainer(identifier: "iCloud.Snapp").publicCloudDatabase
@@ -88,16 +91,12 @@ class ChatController{
                 }else{
                     
                     var token  = records.first?.value(forKey: user_token) as! String
-                    //  self.sendPushNotificationToDevice(token: token, message: "ciao flavio")
                     
-                    
-                    // ottieni il token di notifica push dell'utente
-                    
-                    
-                    
+                                
                     var snapped = NSLocalizedString(".you_are_being_snapped_by" , comment: "comment")
                     
-                    snapped.append(" \(ManagerOfApp.shared.mainUser?.numbers.first)")
+                   //append the name and number
+                    
                     var aboutYou = NSLocalizedString(".im_thinking_about_you", comment: "comment")
                     
                     // prepara il payload della notifica push

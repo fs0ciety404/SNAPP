@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91B2CE2229BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */; };
+		91B2CE2329BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */; };
 		91D0741C29BB7E8000EC430B /* SnappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0741B29BB7E8000EC430B /* SnappApp.swift */; };
 		91D0741E29BB7E8000EC430B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0741D29BB7E8000EC430B /* ContentView.swift */; };
 		91D0742029BB7E8100EC430B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D0741F29BB7E8100EC430B /* Assets.xcassets */; };
@@ -47,8 +49,6 @@
 		91D074A929BB832A00EC430B /* ContactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D074A829BB832A00EC430B /* ContactCard.swift */; };
 		91D074AC29BB836300EC430B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D074AB29BB836300EC430B /* CloudKit.framework */; };
 		91D074AE29BB837600EC430B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D074AD29BB837600EC430B /* CloudKit.framework */; };
-		91D074B029BB840C00EC430B /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91D074AF29BB840C00EC430B /* GoogleService-Info-2.plist */; };
-		91D074B129BB840C00EC430B /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91D074AF29BB840C00EC430B /* GoogleService-Info-2.plist */; };
 		91D074BE29BB857000EC430B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91D074BC29BB857000EC430B /* Localizable.strings */; };
 		91D074BF29BB857000EC430B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91D074BC29BB857000EC430B /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -106,6 +106,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9116253929BE1C7C00BF4022 /* SnappWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SnappWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91D0741829BB7E8000EC430B /* Snapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D0741B29BB7E8000EC430B /* SnappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappApp.swift; sourceTree = "<group>"; };
 		91D0741D29BB7E8000EC430B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,7 +148,6 @@
 		91D074A829BB832A00EC430B /* ContactCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCard.swift; sourceTree = "<group>"; };
 		91D074AB29BB836300EC430B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		91D074AD29BB837600EC430B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
-		91D074AF29BB840C00EC430B /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		91D074BD29BB857000EC430B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../../Downloads/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		91D074C029BB857D00EC430B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = ../../../Downloads/it.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +205,7 @@
 		91D0740F29BB7E8000EC430B = {
 			isa = PBXGroup;
 			children = (
+				91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */,
 				91D074BC29BB857000EC430B /* Localizable.strings */,
 				91D0747829BB7EF300EC430B /* Model */,
 				91D0747729BB7EE600EC430B /* Utilities */,
@@ -273,6 +275,7 @@
 		91D0744A29BB7EB700EC430B /* SnappWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				9116253929BE1C7C00BF4022 /* SnappWatch-Watch-App-Info.plist */,
 				91D074A129BB81DB00EC430B /* SnappWatch Watch App.entitlements */,
 				91D0749729BB811E00EC430B /* Views */,
 				91D0749529BB80E300EC430B /* SessionWatchView.swift */,
@@ -354,7 +357,6 @@
 		91D074AA29BB836300EC430B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				91D074AF29BB840C00EC430B /* GoogleService-Info-2.plist */,
 				91D074AD29BB837600EC430B /* CloudKit.framework */,
 				91D074AB29BB836300EC430B /* CloudKit.framework */,
 			);
@@ -543,9 +545,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D074BE29BB857000EC430B /* Localizable.strings in Resources */,
+				91B2CE2229BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */,
 				91D0742329BB7E8100EC430B /* Preview Assets.xcassets in Resources */,
 				91D0742029BB7E8100EC430B /* Assets.xcassets in Resources */,
-				91D074B029BB840C00EC430B /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,9 +570,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91D074BF29BB857000EC430B /* Localizable.strings in Resources */,
+				91B2CE2329BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */,
 				91D0745329BB7EB900EC430B /* Preview Assets.xcassets in Resources */,
 				91D0745029BB7EB900EC430B /* Assets.xcassets in Resources */,
-				91D074B129BB840C00EC430B /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +983,7 @@
 				DEVELOPMENT_TEAM = 4BNM7WSTN5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SnappWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SnappWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.theteddies.snapp.1;
@@ -1012,6 +1015,7 @@
 				DEVELOPMENT_TEAM = 4BNM7WSTN5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SnappWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SnappWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.theteddies.snapp.1;
