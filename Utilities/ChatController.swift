@@ -86,7 +86,7 @@ class ChatController{
             } else if let records = records {
                 //TODO: una volta trovato il modo di inviare la notifica, rimettere l'if else
                 if records.isEmpty{
-                    self.error = "Is not registered with the app"
+                    self.error = " Your contact is not registered with the app"
                     showError.wrappedValue = true
                 }else{
                     
@@ -103,7 +103,6 @@ class ChatController{
                     self.sendPushNotification(to: token, title: snapped.description, body: aboutYou.description, sent: sent, showError: showError)
                     
                     
-                    
                     print("Records recuperati con successo: \(records)")
                     self.error = ""
                 }
@@ -111,7 +110,7 @@ class ChatController{
         }
     }
     
-    func sendPushNotification(to token: String, title: String, body: String, sent: Binding<Bool>, showError: Binding<Bool>)  {
+    private func sendPushNotification(to token: String, title: String, body: String, sent: Binding<Bool>, showError: Binding<Bool>)  {
         let message = ["title": title,
                        "body": body]
         
@@ -128,6 +127,8 @@ class ChatController{
         // URL per l'API di Firebase Cloud Messaging (FCM)
         let url = URL(string: "https://fcm.googleapis.com/fcm/send")!
         
+        
+        print(jsonData)
         // Crea una richiesta HTTP
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -135,7 +136,7 @@ class ChatController{
         
         
         // Aggiungi la chiave del server di Firebase alle intestazioni della richiesta
-        request.addValue("Bearer \(key_server)", forHTTPHeaderField: "Authorization")
+        request.addValue("key=\(key_server)", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         // Invia la richiesta
@@ -146,12 +147,8 @@ class ChatController{
                 showError.wrappedValue = true
                 return
             }
-            
-            let session = URLSession.shared
-            let task = session.dataTask(with: request) { data, response, error in
-                if let error = error {
-                    print("Error sending push notification: \(error.localizedDescription)")
-                }
+                
+                print("Here!")
                 if let data = data, let response = response as? HTTPURLResponse {
                     if response.statusCode == 200 {
                         print("Notifica push inviata con successo!")
@@ -164,10 +161,9 @@ class ChatController{
                 }
                 
             }
-            
             task.resume()
         }
-    }
+    
     
     public func getICloudStatus(){
         CKContainer(identifier: "iCloud.ICLOUD.SNAPP").accountStatus { [weak self] returnedStatus, returnedError in

@@ -23,15 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     
     let gcmMessageIDKey = "gcm.Message_ID"
     
-    
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let token = deviceToken
-            .map { String(format: "%02.2hhx", $0)}
-            .joined()
+         let token = deviceToken
+             .map { String(format: "%02.2hhx", $0)}
+             .joined()
         
-      
-        
-    }
+     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
             

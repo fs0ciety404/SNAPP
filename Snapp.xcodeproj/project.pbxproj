@@ -438,6 +438,8 @@
 			dependencies = (
 			);
 			name = "SnappWatch Watch App";
+			packageProductDependencies = (
+			);
 			productName = "SnappWatch Watch App";
 			productReference = 91D0744929BB7EB700EC430B /* SnappWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
