@@ -96,6 +96,8 @@ class ChatController{
                     var snapped = NSLocalizedString(".you_are_being_snapped_by" , comment: "comment")
                     
                    //append the name and number
+                    let number =  UserDefaults.standard.string(forKey: "user_number")
+                    snapped.append(number ?? "unknown")
                     
                     var aboutYou = NSLocalizedString(".im_thinking_about_you", comment: "comment")
                     
