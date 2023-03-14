@@ -112,7 +112,6 @@ struct ContactsView: View {
                         if(formattedPhoneNumber.hasPrefix("39")){
                             formattedPhoneNumber = String(formattedPhoneNumber.dropFirst(2))
                         }
-                        print(formattedPhoneNumber)
                         person.addNumber(number: formattedPhoneNumber)
                     }
                     DispatchQueue.main.async {

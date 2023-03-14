@@ -26,8 +26,9 @@ class ChatController{
     
     @Published var isSignedInToiCloud = true
     @Published var error = ""
+    @Published var cloudResult = ""
     
-    public func saveUser(user : User){
+    public func saveUser(user : User, result: Binding<Bool>){
             
           
         
@@ -45,33 +46,15 @@ class ChatController{
                     retString = "\(error.localizedDescription)"
                     self.isSignedInToiCloud = false
                     self.error = retString
+                    result.wrappedValue = true
+                    self.cloudResult = error.localizedDescription
                 } else {
                     print("Record salvato con successo con ID: \(savedRecord!.recordID.recordName)")
+                    result.wrappedValue = true
+                    self.cloudResult = ".record_saved"
                 }
             }
-           
-      
         }
-    
-    
-    //NOT USED FOR NOW
-    public func saveMessage(){
-        
-        let database = CKContainer(identifier: "iCloud.Snapp").publicCloudDatabase
-        let record = CKRecord(recordType: message_record_type)
-        record.setValue(2231, forKey: id_sender)
-        record.setValue(2131, forKey: id_receiver)
-        record.setValue("ueue", forKey: message_data)
-        
-        database.save(record) { (savedRecord, error) in
-            if let error = error {
-                print("Errore durante il salvataggio del record: \(error.localizedDescription)")
-            } else {
-                print("Record salvato con successo con ID: \(savedRecord!.recordID.recordName)")
-            }
-        }
-    }
-    
     
     public func sendNotification(to number: String, sent: Binding<Bool>, showError: Binding<Bool>){
         let database = CKContainer(identifier: "iCloud.ICLOUD.SNAPP").publicCloudDatabase
@@ -84,13 +67,13 @@ class ChatController{
                 self.error = error.localizedDescription
                 showError.wrappedValue = true
             } else if let records = records {
-                //TODO: una volta trovato il modo di inviare la notifica, rimettere l'if else
+             
                 if records.isEmpty{
                     self.error = " Your contact is not registered with the app"
                     showError.wrappedValue = true
                 }else{
                     
-                    var token  = records.first?.value(forKey: user_token) as! String
+                    let token  = records.first?.value(forKey: user_token) as! String
                     
                                 
                     var snapped = NSLocalizedString(".you_are_being_snapped_by" , comment: "comment")
@@ -98,7 +81,6 @@ class ChatController{
                    //append the name and number
                     let number =  UserDefaults.standard.string(forKey: "user_number")
                     snapped.append(number ?? "unknown")
-                    
                     var aboutYou = NSLocalizedString(".im_thinking_about_you", comment: "comment")
                     
                     // prepara il payload della notifica push

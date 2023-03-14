@@ -86,7 +86,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
         // Messaging.messaging().appDidReceiveMessage(userInfo)
 
         // ...
-
+        //TODO: take the notification number and change it with the name of the contact
+         //  let number = notification.request.content.title.suffix(9)
+           
         // Print full message.
         print(userInfo)
         

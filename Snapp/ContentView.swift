@@ -10,7 +10,7 @@ import CoreHaptics
 struct ContentView: View {
     @ObservedObject var viewModel = SessionDelegator()
     @State var connected = !UserDefaults.standard.bool(forKey: "connectedNumber")
-   
+    @State var result = false
     @State private var text = ""
     var chatController = ChatController()
     
@@ -24,11 +24,17 @@ struct ContentView: View {
                        Button("Save", action: {
                            UserDefaults.standard.set(true, forKey: "connectedNumber")
                            var user = User(token: DeviceTokenManager.shared.deviceToken!, number: text)
-                           chatController.saveUser(user: user)
+                           chatController.saveUser(user: user, result: $result)
                        })
                    }, message: {
                        Text(".enter_your_number")
                    })
+            .alert("", isPresented: $result, actions: {
+                Button("Ok") {}
+            }, message: {
+                Text(chatController.cloudResult)
+                    .bold()
+            })
             
     }
     
