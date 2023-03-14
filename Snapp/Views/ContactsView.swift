@@ -29,8 +29,7 @@ struct ContactsView: View {
             return []
         } else {
             
-            let ret = contacts.filter {$0.name!.localizedCaseInsensitiveContains(searchText)}
-            print(ret.first?.name)
+            let ret = contacts.filter {$0.fullname.localizedCaseInsensitiveContains(searchText)}
             return ret
         }
     }
@@ -62,6 +61,11 @@ struct ContactsView: View {
                         ForEach(0..<$contacts.count, id: \.self){ contactInd in
                             ContactCard(contact: contacts[contactInd], viewModel: viewModel)
                         }
+                        .onChange(of: contacts, perform: { newValue in
+                            contacts.sort{
+                                $0.name ?? "" < $1.name ?? ""
+                            }
+                        })
                     }else{
                         
                         ForEach(searchResults,id: \.self){ result in
@@ -102,7 +106,7 @@ struct ContactsView: View {
                     
                     for number in contact.phoneNumbers {
                         
-                        var n = number.value.stringValue
+                        let n = number.value.stringValue
                         var formattedPhoneNumber = n.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
                                                    
                         if(formattedPhoneNumber.hasPrefix("39")){

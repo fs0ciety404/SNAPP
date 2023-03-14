@@ -37,12 +37,15 @@ struct SessionWatchView: View {
             }
         })
         .onAppear{
-            chatController.getICloudStatus()
-                  if(chatController.isSignedInToiCloud){
-                      chatController.sendNotification(to: contact.numbers.first!, sent: $sent, showError: $showError)
-                  }else{
-                      showError = true
-                  }
+            if(!sent){
+                chatController.getICloudStatus()
+                      if(chatController.isSignedInToiCloud){
+                          chatController.sendNotification(to: contact.numbers.first!, sent: $sent, showError: $showError)
+                      }else{
+                          showError = true
+                      }
+            }
+            
               }
         .ignoresSafeArea()
     }

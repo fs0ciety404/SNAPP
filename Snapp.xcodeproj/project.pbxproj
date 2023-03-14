@@ -986,7 +986,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SnappWatch-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = SnappWatch;
+				INFOPLIST_KEY_CFBundleDisplayName = Snapp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.theteddies.snapp.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1018,7 +1018,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SnappWatch-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = SnappWatch;
+				INFOPLIST_KEY_CFBundleDisplayName = Snapp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.theteddies.snapp.1;
 				LD_RUNPATH_SEARCH_PATHS = (
