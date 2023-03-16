@@ -1,7 +1,18 @@
-/* 
-  Localizable.strings
-  Snapp
+".hello" = "hello";
+".bitch" = "bitch";
+".contacts" = "Contacts";
+".error" = "Error";
+".acceptPrivacyContacts" = "Please go in Settings->Privacy->Contacts and check the privacy access";
+".connecting" = "Connecting...";
+".error_Send_Contact_From_iPhone" = "Open the app and send your preferred contacts";
+".select" = "Select";
+".undo" = "Undo";
+".favourites" = "Favourites";
+".save_contact_to_watch" = "Save contact in your watch";
+".message_is_being_sent" = "Message is being sent!";
+".number" = "Number";
+".enter_your_number" = "Please enter your number correctly, it can not be changed.";
+".you_are_being_snapped_by" = "You are being snapped by ";
+".im_thinking_about_you" = "I'm thinking about you..";
+".record_saved" = "Saved!";
 
-  Created by Francesco De Stasio on 10/03/23.
-  
-*/

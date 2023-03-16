@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91B2CE2229BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */; };
-		91B2CE2329BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */; };
 		91D0741C29BB7E8000EC430B /* SnappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0741B29BB7E8000EC430B /* SnappApp.swift */; };
 		91D0741E29BB7E8000EC430B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0741D29BB7E8000EC430B /* ContentView.swift */; };
 		91D0742029BB7E8100EC430B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D0741F29BB7E8100EC430B /* Assets.xcassets */; };
@@ -49,8 +47,12 @@
 		91D074A929BB832A00EC430B /* ContactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D074A829BB832A00EC430B /* ContactCard.swift */; };
 		91D074AC29BB836300EC430B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D074AB29BB836300EC430B /* CloudKit.framework */; };
 		91D074AE29BB837600EC430B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D074AD29BB837600EC430B /* CloudKit.framework */; };
-		91D074BE29BB857000EC430B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91D074BC29BB857000EC430B /* Localizable.strings */; };
-		91D074BF29BB857000EC430B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91D074BC29BB857000EC430B /* Localizable.strings */; };
+		91F59B5E29C3541E0044A0A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91F59B6129C3541E0044A0A9 /* Localizable.strings */; };
+		91F59B5F29C3541E0044A0A9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91F59B6129C3541E0044A0A9 /* Localizable.strings */; };
+		91F59B6629C354B00044A0A9 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 91F59B6529C354B00044A0A9 /* en.lproj */; };
+		91F59B6729C354B00044A0A9 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 91F59B6529C354B00044A0A9 /* en.lproj */; };
+		91F59B6C29C355860044A0A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F59B6B29C355860044A0A9 /* GoogleService-Info.plist */; };
+		91F59B6D29C355860044A0A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F59B6B29C355860044A0A9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +109,6 @@
 
 /* Begin PBXFileReference section */
 		9116253929BE1C7C00BF4022 /* SnappWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SnappWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
-		91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91D0741829BB7E8000EC430B /* Snapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D0741B29BB7E8000EC430B /* SnappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappApp.swift; sourceTree = "<group>"; };
 		91D0741D29BB7E8000EC430B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,8 +149,11 @@
 		91D074A829BB832A00EC430B /* ContactCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCard.swift; sourceTree = "<group>"; };
 		91D074AB29BB836300EC430B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		91D074AD29BB837600EC430B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
-		91D074BD29BB857000EC430B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../../Downloads/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		91D074C029BB857D00EC430B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = ../../../Downloads/it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		91F59B6229C354280044A0A9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		91F59B6429C354880044A0A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		91F59B6529C354B00044A0A9 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		91F59B6A29C354BD0044A0A9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Localizable.strings; sourceTree = "<group>"; };
+		91F59B6B29C355860044A0A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,8 +209,10 @@
 		91D0740F29BB7E8000EC430B = {
 			isa = PBXGroup;
 			children = (
-				91B2CE2129BE1A12000BBFA2 /* GoogleService-Info.plist */,
-				91D074BC29BB857000EC430B /* Localizable.strings */,
+				91F59B6B29C355860044A0A9 /* GoogleService-Info.plist */,
+				91F59B6829C354BD0044A0A9 /* it.lproj */,
+				91F59B6529C354B00044A0A9 /* en.lproj */,
+				91F59B6129C3541E0044A0A9 /* Localizable.strings */,
 				91D0747829BB7EF300EC430B /* Model */,
 				91D0747729BB7EE600EC430B /* Utilities */,
 				91D0744A29BB7EB700EC430B /* SnappWatch Watch App */,
@@ -361,6 +367,14 @@
 				91D074AB29BB836300EC430B /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91F59B6829C354BD0044A0A9 /* it.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				91F59B6929C354BD0044A0A9 /* Localizable.strings */,
+			);
+			path = it.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,9 +560,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D074BE29BB857000EC430B /* Localizable.strings in Resources */,
-				91B2CE2229BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */,
+				91F59B5E29C3541E0044A0A9 /* Localizable.strings in Resources */,
 				91D0742329BB7E8100EC430B /* Preview Assets.xcassets in Resources */,
+				91F59B6C29C355860044A0A9 /* GoogleService-Info.plist in Resources */,
+				91F59B6629C354B00044A0A9 /* en.lproj in Resources */,
 				91D0742029BB7E8100EC430B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,9 +586,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D074BF29BB857000EC430B /* Localizable.strings in Resources */,
-				91B2CE2329BE1A12000BBFA2 /* GoogleService-Info.plist in Resources */,
+				91F59B5F29C3541E0044A0A9 /* Localizable.strings in Resources */,
 				91D0745329BB7EB900EC430B /* Preview Assets.xcassets in Resources */,
+				91F59B6D29C355860044A0A9 /* GoogleService-Info.plist in Resources */,
+				91F59B6729C354B00044A0A9 /* en.lproj in Resources */,
 				91D0745029BB7EB900EC430B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,11 +715,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		91D074BC29BB857000EC430B /* Localizable.strings */ = {
+		91F59B6129C3541E0044A0A9 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				91D074BD29BB857000EC430B /* en */,
-				91D074C029BB857D00EC430B /* it */,
+				91F59B6229C354280044A0A9 /* it */,
+				91F59B6429C354880044A0A9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		91F59B6929C354BD0044A0A9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F59B6A29C354BD0044A0A9 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -852,7 +876,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theteddies.snapp.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -888,7 +912,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theteddies.snapp.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -993,7 +1017,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theteddies.snapp.1.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1025,7 +1049,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theteddies.snapp.1.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;

@@ -29,8 +29,6 @@ class ChatController{
     @Published var cloudResult = ""
     
     public func saveUser(user : User, result: Binding<Bool>){
-            
-          
         
         UserDefaults.standard.set(user.number, forKey: "user_number")
             
@@ -51,7 +49,7 @@ class ChatController{
                 } else {
                     print("Record salvato con successo con ID: \(savedRecord!.recordID.recordName)")
                     result.wrappedValue = true
-                    self.cloudResult = ".record_saved"
+                    self.cloudResult = NSLocalizedString(".record_saved", comment: "comment")
                 }
             }
         }
@@ -81,7 +79,7 @@ class ChatController{
                    //append the name and number
                     let number =  UserDefaults.standard.string(forKey: "user_number")
                     snapped.append(number ?? "unknown")
-                    var aboutYou = NSLocalizedString(".im_thinking_about_you", comment: "comment")
+                    let aboutYou = NSLocalizedString(".im_thinking_about_you", comment: "comment")
                     
                     // prepara il payload della notifica push
                     self.sendPushNotification(to: token, title: snapped.description, body: aboutYou.description, sent: sent, showError: showError)

@@ -29,7 +29,10 @@ struct ContactsView: View {
             return []
         } else {
             
-            let ret = contacts.filter {$0.fullname.localizedCaseInsensitiveContains(searchText)}
+            let ret = contacts.filter {
+                let fullname = ($0.name ?? "") + " " + ($0.surname ?? "")
+                return fullname.localizedCaseInsensitiveContains(searchText)
+            }
             return ret
         }
     }
@@ -76,7 +79,7 @@ struct ContactsView: View {
                 }
                 .listStyle(.inset)
             }
-            .navigationTitle("Contacts")
+            .navigationTitle(".contacts")
             .navigationBarTitleDisplayMode(.inline)
             
         }

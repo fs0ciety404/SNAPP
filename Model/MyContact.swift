@@ -13,7 +13,6 @@ public enum Keys: String, CodingKey {
     case surname
     case numbers
     case profilepic
-    case fullname
 }
 
 
@@ -30,11 +29,6 @@ public class MyContact : NSObject, NSSecureCoding, Identifiable, Codable {
     @Published var surname: String? = ""
    // @Published var profilepic: Data?
     @Published var numbers : [String] = []
-    var fullname: String {
-        get{
-            (self.name ?? "") + " " + (self.surname ?? "")
-        }
-    }
     
     public required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: Keys.self)
@@ -59,7 +53,6 @@ public class MyContact : NSObject, NSSecureCoding, Identifiable, Codable {
     }
     
     init(name: String,surname: String, numbers: [String]){
-        super.init()
         self.name = name
         self.surname = surname
         //self.profilepic = profilepic
@@ -83,8 +76,7 @@ public class MyContact : NSObject, NSSecureCoding, Identifiable, Codable {
         guard let name = coder.decodeObject(forKey: "name") as? String,
               let surname = coder.decodeObject(forKey: "surname") as? String,
               //let profilepic = coder.decodeObject(forKey: "profilepic") as? Data,
-              let numbers = coder.decodeArrayOfObjects(ofClasses: [MyContact.self], forKey: "numbers") as? [String],
-              let fullname = coder.decodeObject(forKey: "fullname") as? String
+              let numbers = coder.decodeArrayOfObjects(ofClasses: [MyContact.self], forKey: "numbers") as? [String]
                 
         else {return nil}
         

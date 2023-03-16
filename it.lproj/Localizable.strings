@@ -1,0 +1,17 @@
+".hello" = "Ciao";
+".bitch" = "Puttana";
+".contacts" = "Contatti";
+".error" = "Errore";
+".acceptPrivacyContacts" = "Accetta le policy per i Contatti in Impostazioni->Privacy->Contatti";
+".connecting" = "Connettendo...";
+".error_Send_Contact_From_iPhone" = "Apri l'app e invia i tuoi contatti preferiti";
+".select" = "Seleziona";
+".undo" = "Annulla";
+".favourites" = "Preferiti";
+".save_contact_to_watch" = "Salva il contatto nel tuo Watch";
+".message_is_being_sent" = "Messaggio inviato!";
+".number" = "Numero";
+".enter_your_number" = "Inserisci il tuo numero correttamente, non può essere cambiato.";
+".you_are_being_snapped_by" = "Sei stato snappato da ";
+".im_thinking_about_you" = "Ti sto pensando..";
+".record_saved" = "Salvato!";
