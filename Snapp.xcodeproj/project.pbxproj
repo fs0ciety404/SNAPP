@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91630B7129C4AA4A00F5BF8B /* OUTPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */; };
+		91630B7229C4AA4A00F5BF8B /* OUTPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */; };
+		91630B7329C4AA4A00F5BF8B /* INPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6A29C4AA4A00F5BF8B /* INPUT.gif */; };
+		91630B7429C4AA4A00F5BF8B /* INPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6A29C4AA4A00F5BF8B /* INPUT.gif */; };
+		91630B7529C4AA4A00F5BF8B /* SPLASHSCREEN.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6B29C4AA4A00F5BF8B /* SPLASHSCREEN.gif */; };
+		91630B7629C4AA4A00F5BF8B /* SPLASHSCREEN.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6B29C4AA4A00F5BF8B /* SPLASHSCREEN.gif */; };
+		91630B7729C4AA4A00F5BF8B /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6C29C4AA4A00F5BF8B /* Shared.xcassets */; };
+		91630B7829C4AA4A00F5BF8B /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6C29C4AA4A00F5BF8B /* Shared.xcassets */; };
+		91630B7929C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91630B6E29C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift */; };
+		91630B7A29C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91630B6E29C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift */; };
+		91630B7B29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91630B6F29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift */; };
+		91630B7C29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91630B6F29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift */; };
+		91630B7D29C4AA4A00F5BF8B /* AnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91630B7029C4AA4A00F5BF8B /* AnimationViewModel.swift */; };
+		91630B7E29C4AA4A00F5BF8B /* AnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91630B7029C4AA4A00F5BF8B /* AnimationViewModel.swift */; };
+		91630B8129C4AAEC00F5BF8B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91630B8029C4AAEC00F5BF8B /* SDWebImageSwiftUI */; };
 		91D0741C29BB7E8000EC430B /* SnappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0741B29BB7E8000EC430B /* SnappApp.swift */; };
 		91D0741E29BB7E8000EC430B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0741D29BB7E8000EC430B /* ContentView.swift */; };
 		91D0742029BB7E8100EC430B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D0741F29BB7E8100EC430B /* Assets.xcassets */; };
@@ -24,8 +39,6 @@
 		91D0746C29BB7EB900EC430B /* SnappWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 91D0744929BB7EB700EC430B /* SnappWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		91D0747B29BB7F6F00EC430B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 91D0747A29BB7F6F00EC430B /* FirebaseAnalytics */; };
 		91D0747D29BB7F6F00EC430B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 91D0747C29BB7F6F00EC430B /* FirebaseMessaging */; };
-		91D0747F29BB7FA200EC430B /* AnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0747E29BB7FA200EC430B /* AnimationViewModel.swift */; };
-		91D0748029BB7FA200EC430B /* AnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0747E29BB7FA200EC430B /* AnimationViewModel.swift */; };
 		91D0748229BB7FC200EC430B /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0748129BB7FC200EC430B /* ChatController.swift */; };
 		91D0748329BB7FC200EC430B /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0748129BB7FC200EC430B /* ChatController.swift */; };
 		91D0748529BB7FDD00EC430B /* HapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0748429BB7FDD00EC430B /* HapticEngine.swift */; };
@@ -109,6 +122,13 @@
 
 /* Begin PBXFileReference section */
 		9116253929BE1C7C00BF4022 /* SnappWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SnappWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OUTPUT.gif; sourceTree = "<group>"; };
+		91630B6A29C4AA4A00F5BF8B /* INPUT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = INPUT.gif; sourceTree = "<group>"; };
+		91630B6B29C4AA4A00F5BF8B /* SPLASHSCREEN.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SPLASHSCREEN.gif; sourceTree = "<group>"; };
+		91630B6C29C4AA4A00F5BF8B /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
+		91630B6E29C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashscreenViewWatchOS.swift; sourceTree = "<group>"; };
+		91630B6F29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashscreenViewIOS.swift; sourceTree = "<group>"; };
+		91630B7029C4AA4A00F5BF8B /* AnimationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewModel.swift; sourceTree = "<group>"; };
 		91D0741829BB7E8000EC430B /* Snapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D0741B29BB7E8000EC430B /* SnappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappApp.swift; sourceTree = "<group>"; };
 		91D0741D29BB7E8000EC430B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,7 +149,6 @@
 		91D0746229BB7EB900EC430B /* SnappWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnappWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D0746629BB7EB900EC430B /* SnappWatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappWatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		91D0746829BB7EB900EC430B /* SnappWatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappWatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		91D0747E29BB7FA200EC430B /* AnimationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewModel.swift; sourceTree = "<group>"; };
 		91D0748129BB7FC200EC430B /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		91D0748429BB7FDD00EC430B /* HapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticEngine.swift; sourceTree = "<group>"; };
 		91D0748629BB7FF900EC430B /* SessionDelegator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegator.swift; sourceTree = "<group>"; };
@@ -161,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91630B8129C4AAEC00F5BF8B /* SDWebImageSwiftUI in Frameworks */,
 				91D074AC29BB836300EC430B /* CloudKit.framework in Frameworks */,
 				91D0747D29BB7F6F00EC430B /* FirebaseMessaging in Frameworks */,
 				91D0747B29BB7F6F00EC430B /* FirebaseAnalytics in Frameworks */,
@@ -206,9 +226,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91630B6829C4AA4A00F5BF8B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */,
+				91630B6A29C4AA4A00F5BF8B /* INPUT.gif */,
+				91630B6B29C4AA4A00F5BF8B /* SPLASHSCREEN.gif */,
+				91630B6C29C4AA4A00F5BF8B /* Shared.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		91630B6D29C4AA4A00F5BF8B /* SharedView */ = {
+			isa = PBXGroup;
+			children = (
+				91630B6E29C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift */,
+				91630B6F29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift */,
+				91630B7029C4AA4A00F5BF8B /* AnimationViewModel.swift */,
+			);
+			path = SharedView;
+			sourceTree = "<group>";
+		};
 		91D0740F29BB7E8000EC430B = {
 			isa = PBXGroup;
 			children = (
+				91630B6829C4AA4A00F5BF8B /* Shared */,
+				91630B6D29C4AA4A00F5BF8B /* SharedView */,
 				91F59B6B29C355860044A0A9 /* GoogleService-Info.plist */,
 				91F59B6829C354BD0044A0A9 /* it.lproj */,
 				91F59B6529C354B00044A0A9 /* en.lproj */,
@@ -323,7 +366,6 @@
 			children = (
 				91D0748129BB7FC200EC430B /* ChatController.swift */,
 				91D0748929BB800F00EC430B /* JSONFile.swift */,
-				91D0747E29BB7FA200EC430B /* AnimationViewModel.swift */,
 				91D0748629BB7FF900EC430B /* SessionDelegator.swift */,
 				91D0748C29BB802700EC430B /* NotificationService.swift */,
 				91D0748429BB7FDD00EC430B /* HapticEngine.swift */,
@@ -398,6 +440,7 @@
 			packageProductDependencies = (
 				91D0747A29BB7F6F00EC430B /* FirebaseAnalytics */,
 				91D0747C29BB7F6F00EC430B /* FirebaseMessaging */,
+				91630B8029C4AAEC00F5BF8B /* SDWebImageSwiftUI */,
 			);
 			productName = Snapp;
 			productReference = 91D0741829BB7E8000EC430B /* Snapp.app */;
@@ -540,6 +583,7 @@
 			mainGroup = 91D0740F29BB7E8000EC430B;
 			packageReferences = (
 				91D0747929BB7F6F00EC430B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				91630B7F29C4AAEC00F5BF8B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 91D0741929BB7E8000EC430B /* Products */;
 			projectDirPath = "";
@@ -562,9 +606,13 @@
 			files = (
 				91F59B5E29C3541E0044A0A9 /* Localizable.strings in Resources */,
 				91D0742329BB7E8100EC430B /* Preview Assets.xcassets in Resources */,
+				91630B7729C4AA4A00F5BF8B /* Shared.xcassets in Resources */,
 				91F59B6C29C355860044A0A9 /* GoogleService-Info.plist in Resources */,
+				91630B7329C4AA4A00F5BF8B /* INPUT.gif in Resources */,
 				91F59B6629C354B00044A0A9 /* en.lproj in Resources */,
 				91D0742029BB7E8100EC430B /* Assets.xcassets in Resources */,
+				91630B7129C4AA4A00F5BF8B /* OUTPUT.gif in Resources */,
+				91630B7529C4AA4A00F5BF8B /* SPLASHSCREEN.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,9 +636,13 @@
 			files = (
 				91F59B5F29C3541E0044A0A9 /* Localizable.strings in Resources */,
 				91D0745329BB7EB900EC430B /* Preview Assets.xcassets in Resources */,
+				91630B7829C4AA4A00F5BF8B /* Shared.xcassets in Resources */,
 				91F59B6D29C355860044A0A9 /* GoogleService-Info.plist in Resources */,
+				91630B7429C4AA4A00F5BF8B /* INPUT.gif in Resources */,
 				91F59B6729C354B00044A0A9 /* en.lproj in Resources */,
 				91D0745029BB7EB900EC430B /* Assets.xcassets in Resources */,
+				91630B7229C4AA4A00F5BF8B /* OUTPUT.gif in Resources */,
+				91630B7629C4AA4A00F5BF8B /* SPLASHSCREEN.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,14 +671,16 @@
 				91D0741E29BB7E8000EC430B /* ContentView.swift in Sources */,
 				91D0748529BB7FDD00EC430B /* HapticEngine.swift in Sources */,
 				91D074A929BB832A00EC430B /* ContactCard.swift in Sources */,
+				91630B7929C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift in Sources */,
 				91D074A729BB831500EC430B /* ContactsView.swift in Sources */,
 				91D0749329BB805900EC430B /* MyContact.swift in Sources */,
+				91630B7B29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift in Sources */,
 				91D0748729BB7FF900EC430B /* SessionDelegator.swift in Sources */,
 				91D0748A29BB800F00EC430B /* JSONFile.swift in Sources */,
 				91D0748D29BB802700EC430B /* NotificationService.swift in Sources */,
 				91D0749029BB805200EC430B /* User.swift in Sources */,
-				91D0747F29BB7FA200EC430B /* AnimationViewModel.swift in Sources */,
 				91D0741C29BB7E8000EC430B /* SnappApp.swift in Sources */,
+				91630B7D29C4AA4A00F5BF8B /* AnimationViewModel.swift in Sources */,
 				91D0748229BB7FC200EC430B /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,12 +708,14 @@
 			files = (
 				91D0744E29BB7EB700EC430B /* ContentView.swift in Sources */,
 				91D0749B29BB813000EC430B /* ContactsViewWatch.swift in Sources */,
-				91D0748029BB7FA200EC430B /* AnimationViewModel.swift in Sources */,
 				91D0748829BB7FF900EC430B /* SessionDelegator.swift in Sources */,
+				91630B7E29C4AA4A00F5BF8B /* AnimationViewModel.swift in Sources */,
 				91D0749129BB805200EC430B /* User.swift in Sources */,
 				91D0749429BB805900EC430B /* MyContact.swift in Sources */,
 				91D0749D29BB813500EC430B /* MyCardView.swift in Sources */,
 				91D0744C29BB7EB700EC430B /* SnappWatchApp.swift in Sources */,
+				91630B7C29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift in Sources */,
+				91630B7A29C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift in Sources */,
 				91D0749929BB812800EC430B /* ContactCardWatch.swift in Sources */,
 				91D0749629BB80E300EC430B /* SessionWatchView.swift in Sources */,
 				91D0748329BB7FC200EC430B /* ChatController.swift in Sources */,
@@ -785,7 +841,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -839,7 +895,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1212,6 +1268,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		91630B7F29C4AAEC00F5BF8B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		91D0747929BB7F6F00EC430B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1223,6 +1287,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		91630B8029C4AAEC00F5BF8B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91630B7F29C4AAEC00F5BF8B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		91D0747A29BB7F6F00EC430B /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 91D0747929BB7F6F00EC430B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
