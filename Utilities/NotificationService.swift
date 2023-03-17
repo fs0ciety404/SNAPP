@@ -32,7 +32,8 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate, Observabl
     //foreground
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         logContents(of: notification)
-        completionHandler([.badge, .sound])
+        
+        completionHandler([.badge, .sound, .banner])
     }
     //background
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
@@ -41,6 +42,7 @@ class NotificationService: NSObject, UNUserNotificationCenterDelegate, Observabl
     }
     
     func logContents(of notification: UNNotification){
+        
         print(notification.request.content.userInfo)
     }
 }
