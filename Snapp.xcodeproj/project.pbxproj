@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2388F19829C63DFB00ED49C9 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388F19729C63DFB00ED49C9 /* PageModel.swift */; };
+		2388F19B29C63E0D00ED49C9 /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388F19929C63E0D00ED49C9 /* AppMainView.swift */; };
+		2388F19C29C63E0D00ED49C9 /* SamplePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388F19A29C63E0D00ED49C9 /* SamplePageView.swift */; };
 		91630B7129C4AA4A00F5BF8B /* OUTPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */; };
 		91630B7229C4AA4A00F5BF8B /* OUTPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */; };
 		91630B7329C4AA4A00F5BF8B /* INPUT.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91630B6A29C4AA4A00F5BF8B /* INPUT.gif */; };
@@ -121,6 +124,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2388F19729C63DFB00ED49C9 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		2388F19929C63E0D00ED49C9 /* AppMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
+		2388F19A29C63E0D00ED49C9 /* SamplePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePageView.swift; sourceTree = "<group>"; };
 		9116253929BE1C7C00BF4022 /* SnappWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SnappWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		91630B6929C4AA4A00F5BF8B /* OUTPUT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OUTPUT.gif; sourceTree = "<group>"; };
 		91630B6A29C4AA4A00F5BF8B /* INPUT.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = INPUT.gif; sourceTree = "<group>"; };
@@ -226,6 +232,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2388F19629C63DFB00ED49C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2388F19729C63DFB00ED49C9 /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		91630B6829C4AA4A00F5BF8B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +299,7 @@
 		91D0741A29BB7E8000EC430B /* Snapp */ = {
 			isa = PBXGroup;
 			children = (
+				2388F19629C63DFB00ED49C9 /* Model */,
 				91D074A229BB822100EC430B /* Info.plist */,
 				91D074A329BB82E000EC430B /* Views */,
 				91D074A029BB81D000EC430B /* Snapp.entitlements */,
@@ -395,6 +410,8 @@
 		91D074A329BB82E000EC430B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2388F19929C63E0D00ED49C9 /* AppMainView.swift */,
+				2388F19A29C63E0D00ED49C9 /* SamplePageView.swift */,
 				91D074A829BB832A00EC430B /* ContactCard.swift */,
 				91D074A629BB831400EC430B /* ContactsView.swift */,
 				91D074A429BB82F500EC430B /* HapticSenderView.swift */,
@@ -671,10 +688,13 @@
 				91D0741E29BB7E8000EC430B /* ContentView.swift in Sources */,
 				91D0748529BB7FDD00EC430B /* HapticEngine.swift in Sources */,
 				91D074A929BB832A00EC430B /* ContactCard.swift in Sources */,
+				2388F19B29C63E0D00ED49C9 /* AppMainView.swift in Sources */,
 				91630B7929C4AA4A00F5BF8B /* SplashscreenViewWatchOS.swift in Sources */,
 				91D074A729BB831500EC430B /* ContactsView.swift in Sources */,
+				2388F19C29C63E0D00ED49C9 /* SamplePageView.swift in Sources */,
 				91D0749329BB805900EC430B /* MyContact.swift in Sources */,
 				91630B7B29C4AA4A00F5BF8B /* SplashscreenViewIOS.swift in Sources */,
+				2388F19829C63DFB00ED49C9 /* PageModel.swift in Sources */,
 				91D0748729BB7FF900EC430B /* SessionDelegator.swift in Sources */,
 				91D0748A29BB800F00EC430B /* JSONFile.swift in Sources */,
 				91D0748D29BB802700EC430B /* NotificationService.swift in Sources */,
