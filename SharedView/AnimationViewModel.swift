@@ -67,7 +67,6 @@ struct MyAnimation : View {
                 .scaleEffect(wawe ? 2 : 0.5)
                 .opacity(wawe ? 0 : 1)
                 .animation(Animation.easeInOut(duration: 1).repeatForever(autoreverses: false).speed(0.5).repeatCount(1))
-
         }
     }
 }

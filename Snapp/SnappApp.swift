@@ -59,15 +59,10 @@ struct SnappApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self)var appDelegate
     
     var supportsHaptics: Bool = false
-    @State var notificationService = NotificationService()
-    
-    
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear {
-                    notificationService.requestPermission()
-                }
+            SplashscreenViewIOS()
                 .edgesIgnoringSafeArea(.all)
         }
     }
