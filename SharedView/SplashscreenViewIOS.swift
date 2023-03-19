@@ -35,16 +35,32 @@ struct SplashscreenViewIOS: View {
                         if animationStarted {
                             
                             if animationFinished {
-                                Image("LOGO")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .scaleEffect(0.47)
-                                    .environment(\.colorScheme, .dark)
                                 
+                                if colorScheme == .light {
+                                    
+                                    Image("LOGO")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .scaleEffect(0.64)
+                                } else {
+                                    Image("LOGO")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .scaleEffect(0.64)
+                                }
                             } else {
-                                AnimatedImage(name: "INPUT.gif")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
+                                
+                                if colorScheme == .light {
+                                    
+                                    AnimatedImage(name: "SPLASHSCREEN-INVERSA.gif")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    
+                                } else {
+                                    AnimatedImage(name: "SPLASHSCREEN.gif")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                }
                             }
                         }
                     }
