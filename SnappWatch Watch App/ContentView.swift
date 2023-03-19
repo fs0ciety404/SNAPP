@@ -8,15 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
-    @State var contactsJSON = itemsJSON
+
     var body: some View {
-        NavigationStack{
-            ContactsViewWatch(contactsJSON: $contactsJSON, viewModel: SessionDelegator())
-                .navigationTitle(".favourites")
-                .navigationBarTitleDisplayMode(.inline)
-        }
+        SplashscreenViewWatchOS()
     }
 }
 

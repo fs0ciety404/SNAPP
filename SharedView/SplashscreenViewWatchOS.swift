@@ -6,34 +6,96 @@
 //
 
 import SwiftUI
-import Combine
+import SDWebImage
 import SDWebImageSwiftUI
 
 struct SplashscreenViewWatchOS: View {
     
-//    private let images = (0...7).map { UIImage(named: "Image-\($0).jpg")! }
-//    private var timer = LoadingTimer()
+    @Environment(\.colorScheme) var colorScheme
+    
+    @State var animationFinished: Bool = false
+    
+    @State var animationStarted: Bool = false
+    
+    @State var removeGif: Bool = false
+    
+    @State var contactsJSON = itemsJSON
     
     var body: some View {
         ZStack{
-            VStack{
+            
+            NavigationStack{
+                ContactsViewWatch(contactsJSON: $contactsJSON, viewModel: SessionDelegator())
+                    .navigationTitle(".favourites")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            
+            ZStack{
+                
+                Color("BG")
+                    .ignoresSafeArea()
+                
+                if !removeGif{
+                    
+                    ZStack{
+                        
+                        if animationStarted {
+                            
+                            if animationFinished {
+                                
+                                if colorScheme == .light {
+                                    
+                                    Image("LOGO")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .scaleEffect(0.64)
+                                    
+                                } else {
+                                    Image("LOGO")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .scaleEffect(0.64)
+                                }
+                            } else {
+                                
+                                if colorScheme == .light {
+                                    
+                                    WebImage(url: URL(string: "https://github.com/fs0ciety404/SNAPP/blob/main/Shared/SPLASHSCREEN-INVERSA.gif?raw=true"))
+                                        .resizable()
+                                        .scaledToFit()
+                                    
+                                } else {
+                                    WebImage(url: URL(string: "https://github.com/fs0ciety404/SNAPP/blob/main/Shared/SPLASHSCREEN.gif?raw=true"))
+                                        .resizable()
+                                        .scaledToFit()
+                                }
+                            }
+                        }
+                    }
+                    .animation(.none, value: animationFinished)
+                }
+            }
+            .opacity(animationFinished ? 0 : 1)
+        }
+        .onAppear{
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+                
+                animationStarted = true
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+                    withAnimation(.easeInOut(duration: 0.7)){
+                        animationFinished = true
+                    }
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        removeGif = true
+                    }
+                }
+                
             }
         }
     }
-    
-//    class LoadingTimer {
-//
-//        let publisher = Timer.publish(every: 0.1, on: .main, in: .default)
-//        private var timerCancellable: Cancellable?
-//
-//        func start() {
-//            self.timerCancellable = publisher.connect()
-//        }
-//
-//        func cancel() {
-//            self.timerCancellable?.cancel()
-//        }
-//    }
 }
 
 struct SplashscreenViewWatchOS_Previews: PreviewProvider {
