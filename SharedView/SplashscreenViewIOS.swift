@@ -37,16 +37,15 @@ struct SplashscreenViewIOS: View {
                             if animationFinished {
                                 
                                 if colorScheme == .light {
-                                    
-                                    Image("LOGO")
+                                    Image("LIGHT/SPLASHSCREEN0050")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .scaleEffect(0.64)
+                                        .scaleEffect(0.41)
                                 } else {
-                                    Image("LOGO")
+                                    Image("DARK/SPLASHSCREEN0050")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .scaleEffect(0.64)
+                                        .scaleEffect(0.41)
                                 }
                             } else {
                                 
@@ -55,11 +54,13 @@ struct SplashscreenViewIOS: View {
                                     AnimatedImage(name: "SPLASHSCREEN-INVERSA.gif")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
+                                        .scaleEffect(0.5)
                                     
                                 } else {
                                     AnimatedImage(name: "SPLASHSCREEN.gif")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
+                                        .scaleEffect(0.5)
                                 }
                             }
                         }
@@ -76,7 +77,8 @@ struct SplashscreenViewIOS: View {
                 animationStarted = true
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
-                    withAnimation(.easeInOut(duration: 0.7)){
+                    withAnimation(.easeInOut(duration: 0.5)){
+                        
                         animationFinished = true
                     }
                     

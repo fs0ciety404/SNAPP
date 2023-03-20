@@ -44,7 +44,6 @@ struct SplashscreenViewWatchOS: View {
                             if animationFinished {
                                 
                                 if colorScheme == .light {
-                                    
                                     Image("LOGO")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)

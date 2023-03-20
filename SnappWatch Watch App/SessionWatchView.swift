@@ -21,10 +21,6 @@ struct SessionWatchView: View {
         ZStack{
             AnimationViewModel()
                 .scaleEffect(0.7)
-            Text(contact.name ?? "")
-                .offset(x: CGFloat(0),
-                        y: CGFloat(70))
-            
         }
         .alert(".message_is_being_sent", isPresented: $sent){
             Button("Ok"){
@@ -36,17 +32,17 @@ struct SessionWatchView: View {
                 presentationMode.wrappedValue.dismiss()
             }
         })
-        .onAppear{
+        .onTapGesture {
             if(!sent){
                 chatController.getICloudStatus()
-                      if(chatController.isSignedInToiCloud){
-                          chatController.sendNotification(to: contact.numbers.first!, sent: $sent, showError: $showError)
-                      }else{
-                          showError = true
-                      }
+                if(chatController.isSignedInToiCloud){
+                    chatController.sendNotification(to: contact.numbers.first!, sent: $sent, showError: $showError)
+                }else{
+                    showError = true
+                }
             }
             
-              }
+        }
         .ignoresSafeArea()
     }
 }
@@ -56,7 +52,7 @@ struct SessionWatchView: View {
 extension SessionWatchView{
     class ViewModel : ObservableObject{
         @Published var message = ""
-                
+        
         
         func sendMessage(){
             print(message)

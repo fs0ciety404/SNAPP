@@ -16,22 +16,29 @@ struct ContactCardWatch: View {
     var body: some View {
         NavigationStack{
             NavigationLink(destination: MyCardView(contact: contact, contacts: $contacts)) {
-                HStack{
-                    VStack(alignment: .leading){
-                        Text(contact.name ?? "")
-                            .font(.title3)
-                        Text(contact.surname ?? "")
-                            .font(.title3)
+                ZStack{
+                    Image("CardBG")
+                        .scaleEffect(3.0)
+                        .opacity(0.7)
+                    HStack{
+                        VStack(alignment: .leading){
+                            
+                            Text(contact.name ?? "")
+                                .font(.title3)
+                                .fontWeight(.medium)
+                                .foregroundColor(Color("Text"))
+                            
+                            Text(contact.surname ?? "")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                        }
+                        Spacer()
                     }
-                    .padding()
-                    
-                    Spacer()
-                    
-               
                 }
-                .navigationTitle(".favourites")
-                .navigationBarTitleDisplayMode(.inline)
+                .frame()
             }
+            .navigationTitle(".favourites")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
