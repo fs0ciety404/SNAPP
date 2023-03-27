@@ -40,7 +40,7 @@ struct ContactsViewWatch: View {
                                     .animation(.easeOut(duration: 1))
                                     .padding(.vertical)
                             }
-                            .frame(width: 200 , height: 100)
+                            .frame(width: 200 , height: 90)
                             
                         }
                     }
@@ -90,6 +90,6 @@ struct ContactsViewWatch: View {
 
 struct ContactsViewWatch_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsViewWatch(contactsJSON: .constant([]), viewModel: SessionDelegator())
+        ContactsViewWatch(contactsJSON: .constant([MyContact(name: "Alfredo", surname: "Alfredo", numbers: ["3332221110"])]), viewModel: SessionDelegator())
     }
 }
