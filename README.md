@@ -1,4 +1,17 @@
-# SNAPP - Stay Connected with Haptic Feedback
+# SNAPP - Stay Connected with Haptic Feedback 
+  ![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)
+  [![Language: Swift](https://img.shields.io/badge/lang-Swift-yellow.svg?style=flat)](https://developer.apple.com/swift/)
+  
+ ## Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
 ## Description
 Imagine a world where distance doesn't hinder connection, where the touch of a screen can transcend miles, and loved ones can feel closer than ever before. Welcome to SNAPP, the revolutionary iPhone and Apple Watch application designed to bridge the gap between digital nomads and their faraway homes.
 
