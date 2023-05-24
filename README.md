@@ -66,7 +66,7 @@ We welcome contributions to enhance SNAPP and make it an even better tool for co
 3. Commit your changes and push the branch to your fork.
 4. Submit a pull request detailing your changes.
 ## License
-SNAPP is released under the [MIT License]. Feel free to modify and distribute the app according to the terms of the license.
+SNAPP is released under the [General Public License]. Feel free to modify and distribute the app according to the terms of the license.
 ## Contact
 If you have any questions, suggestions, or feedback, please don't hesitate to reach out to our team at digitals.nomads.project@gmail.com.
 
