@@ -55,7 +55,7 @@ Enjoy staying connected with your loved ones through haptic feedback!
 1. Launch the SNAPP app on your iPhone.
 2. Pair your Apple Watch with your iPhone if not already done.
 3. Open the SNAPP app on your Apple Watch.
-4. On the iPhone screen, register with your phone number and allow push notifications, and contact access requet.
+4. On the iPhone screen, register with your phone number and allow push notifications, and contact access request.
 5. Send the contacts to the Apple Watch by doing a left slide on the contact while SNAPP is open on the Apple Watch. 
 6. On the Apple Watch select the person you want, then touch the watch to make a custom vaibration.
 You can customize the haptic feedback parameters with your finger pressure and screen position.
