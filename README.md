@@ -1,5 +1,4 @@
 # SNAPP - Stay Connected with Haptic Feedback 
-  ![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)
   [![Language: Swift](https://img.shields.io/badge/lang-Swift-yellow.svg?style=flat)](https://developer.apple.com/swift/)
   
  ## Contents
